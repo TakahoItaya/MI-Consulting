@@ -1,0 +1,570 @@
+@charset "UTF-8";
+body {
+  -webkit-text-size-adjust: 100%;
+  color: #000;
+  font-family: "ヒラギノ角ゴ Pro W3", Hiragino Kaku Gothic Pro, " メイリオ", Meiryo, Osaka, " ＭＳ Ｐゴシック", MS PGothic, " sans-serif";
+}
+
+main {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+p {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.top .header {
+  position: relative;
+}
+
+.top .header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top .header-logo img {
+  width: 200px;
+}
+
+.top .subject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media print, screen and (max-width: 650px) {
+  .top .subject {
+    margin-top: 100px;
+  }
+}
+
+.top .subject .image {
+  margin-top: 30px;
+}
+
+.top .subject .image img {
+  width: 70px;
+}
+
+.top .subject .title {
+  text-align: center;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.top .subject .title p {
+  font-size: 24px;
+}
+
+@media print, screen and (max-width: 800px) {
+  .top .subject .title p {
+    font-size: 20px;
+  }
+}
+
+@media print, screen and (max-width: 700px) {
+  .top .subject .title p {
+    font-size: 18px;
+  }
+}
+
+.top .nav-btn {
+  width: 52px;
+  height: 30px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: transparent;
+  border: none;
+  font: inherit;
+  outline: none;
+  position: relative;
+  right: 30px;
+  z-index: 100;
+  margin-top: 50px;
+}
+
+@media print, screen and (min-width: 991px) {
+  .top .nav-btn {
+    display: none;
+  }
+}
+
+.top .nav-btn.-active span {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.top .nav-btn.-active span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.top .nav-btn.-active span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.top .nav-btn.-active span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.top .nav-btn span {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  display: block;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.top .nav-btn span:first-child {
+  top: 0;
+}
+
+.top .nav-btn span:nth-child(2) {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.top .nav-btn span:last-child {
+  bottom: 0;
+}
+
+.top .nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #000000cc;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+@media print, screen and (min-width: 991px) {
+  .top .nav {
+    position: relative;
+    width: initial;
+    background-color: transparent;
+    padding-top: 0;
+    z-index: 3;
+    left: inherit;
+    right: 0;
+    top: 38px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.top .nav.-active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.top .nav-list {
+  text-align: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  list-style: none;
+}
+
+@media print, screen and (min-width: 991px) {
+  .top .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 100px;
+  }
+}
+
+.top .item {
+  text-align: center;
+}
+
+.top .item + .item {
+  margin-top: 30px;
+}
+
+@media print, screen and (min-width: 991px) {
+  .top .item + .item {
+    margin-top: 0;
+    margin-left: 30px;
+  }
+}
+
+.top .item a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+}
+
+@media print, screen and (min-width: 991px) {
+  .top .item a {
+    color: #000;
+  }
+}
+
+@media print, screen and (max-width: 650px) {
+  .top .main-image img {
+    padding-top: 50px;
+  }
+}
+
+.message .header-logo img {
+  width: 200px;
+}
+
+.message .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  list-style: none;
+  margin-right: 100px;
+}
+
+.message .item {
+  margin-left: 30px;
+}
+
+.message .item a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
+.message .message-image {
+  background-image: url(../img/message.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: darken;
+  height: 400px;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.message .message-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-100%) translateX(-50%);
+          transform: translateY(-100%) translateX(-50%);
+  text-align: center;
+  color: #fff;
+  font-size: 36px;
+}
+
+.message .text {
+  width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.message .text p {
+  font-size: 20px;
+}
+
+.message .name {
+  text-align: end;
+  margin-right: 100px;
+}
+
+.message .name p {
+  font-size: 20px;
+}
+
+.company .header-logo img {
+  width: 200px;
+}
+
+.company .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  list-style: none;
+  margin-right: 100px;
+}
+
+.company .item {
+  margin-left: 30px;
+}
+
+.company .item a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
+.company .company-image {
+  background-image: url(../img/company.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: darken;
+  height: 400px;
+  position: relative;
+}
+
+.company .company-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-100%) translateX(-50%);
+          transform: translateY(-100%) translateX(-50%);
+  text-align: center;
+  color: #fff;
+  font-size: 36px;
+}
+
+.company .table {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.company tr {
+  background-color: lightgrey;
+  font-size: 30px;
+}
+
+.company td {
+  border: solid 2px white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.company .center {
+  text-align: center;
+}
+
+.profile .header-logo img {
+  width: 200px;
+}
+
+.profile .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  list-style: none;
+  margin-right: 100px;
+}
+
+.profile .item {
+  margin-left: 30px;
+}
+
+.profile .item a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
+.profile td {
+  padding-left: 30px;
+}
+
+.profile .activity {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.profile .thesis {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.profile .profile-image {
+  margin-left: 80px;
+}
+
+.profile .profile-image img {
+  width: 400px;
+  height: 550px;
+}
+
+.profile .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 60px;
+}
+
+.profile .exception {
+  padding-top: 20px;
+}
+
+.consulting .header-logo img {
+  width: 200px;
+}
+
+.consulting .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  list-style: none;
+  margin-right: 100px;
+}
+
+.consulting .item {
+  margin-left: 30px;
+}
+
+.consulting .item a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
+.consulting .consulting-image {
+  background-image: url(../img/consulting.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: darken;
+  height: 400px;
+  position: relative;
+}
+
+.consulting .consulting-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-100%) translateX(-50%);
+          transform: translateY(-100%) translateX(-50%);
+  text-align: center;
+  color: #fff;
+  font-size: 36px;
+}
+
+.consulting .title {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.consulting .title p {
+  font-size: 24px;
+}
+
+.consulting .stepbar {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  width: 80%;
+}
+
+.consulting .stepbarwrap {
+  margin: 2em 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.consulting .steptitle {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.consulting .stepcircle {
+  display: inline-block;
+  width: 7em;
+  height: 7em;
+  content: "";
+  border-radius: 50%;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  border: 5px solid lightgrey;
+  -webkit-box-shadow: 0 0 0 5px navy;
+          box-shadow: 0 0 0 5px navy;
+}
+
+.consulting .stepcircle span {
+  display: inline-block;
+  line-height: 1.2em;
+  font-size: 0.8em;
+  font-weight: bold;
+  position: relative;
+  top: 3em;
+}
+
+.consulting .stepcircle span .bold {
+  font-size: 16px;
+}
+
+.consulting .steptxt {
+  padding-left: 3.5em;
+  padding-top: 10px;
+}
+
+.consulting .steptxt .txt {
+  font-size: 1.2em;
+}
+
+.consulting .stepline {
+  width: 5px;
+  height: calc(100% + 1em);
+  background-color: #000;
+  position: absolute;
+  top: 1em;
+  left: 3.6em;
+  z-index: -1;
+}
+
+.stepbarwrap:last-of-type .stepline:last-of-type {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
