@@ -11,17 +11,24 @@
 <body>
     <section class="message">
         <div class="inner">
-            <h1 class="header-logo"><a href="index.html"><img src="img/logo.png" alt=""></a></h1>
-            <div class="nav header-nav" id="nav">
-                <nav class="nav-wrap">
-                    <ul class="nav-list">
-                        <li class="item"><a href="company.html">会社概要</a></li>
-                        <li class="item"><a href="message.html">メッセージ</a></li>
-                        <li class="item"><a href="consulting.html">コンサルティングプロセス</a></li>
-                        <li class="item"><a href="#">お問い合わせ</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <header class="header">
+                <div class="header-inner">
+                    <div class="header-fixed">
+                    <h1 class="header-logo"><a href="index.html"><img src="img/logo.png" alt=""></a></h1>
+                    <button class="nav-btn" id="nav-btn" type="button" aria-label="メニュー"><span></span><span></span><span></span></button>
+                    </div>
+                    <div class="nav header-nav" id="nav">
+                        <nav class="nav-wrap">
+                            <ul class="nav-list">
+                                <li class="item"><a href="company.html">会社概要</a></li>
+                                <li class="item"><a href="message.html">メッセージ</a></li>
+                                <li class="item"><a href="consulting.html">コンサルティングプロセス</a></li>
+                                <li class="item"><a href="#">お問い合わせ</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
             <div class="message-image">
                     <div class="message-title">
                         メッセージ
@@ -29,7 +36,7 @@
             </div>
             <div class="text">
                 <p>
-                    「経営コンサルタントの仕事とは何か?」ということを考えたとき、もちろんいろいろな答えがあると思いますが、<br>
+                    「経営コンサルタントの仕事とは何か?」ということを考えたとき、もちろんいろいろな答えがあると思いますが、
                     一言でいうと、それは「会社が良くなる」ことに必要なご支援をすることだと思っています。
                 </p>
             </div>
@@ -37,8 +44,8 @@
                 <p>
                     では、「会社が良くなる」とはどういう状態でしょうか。<br>
                     会社の成長を通じて社員の方やそのご家族、お客様、地域社会から会社そのものが信頼され、<br>
-                    そこで働いている社員の方々 が充実感や幸福感を得られる、そういう状態になることだと思います。<br>
-                    そしてそういう状態にしたいというのが経営者の方の想い だと考えます。
+                    そこで働いている社員の方々が充実感や幸福感を得られる、そういう状態になることだと思います。<br>
+                    そしてそういう状態にしたいというのが経営者の方の想いだと考えます。
                 </p>
             </div>
             <div class="text">
@@ -61,6 +68,8 @@
                 </p>
             </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="js/script.js"></script>
     </section>
 </body>
 </html>

@@ -11,17 +11,24 @@
 <body>
     <section class="company">
         <div class="inner">
-            <h1 class="header-logo"><a href="index.html"><img src="img/logo.png" alt=""></a></h1>
-            <div class="nav header-nav" id="nav">
-                <nav class="nav-wrap">
-                    <ul class="nav-list">
-                        <li class="item"><a href="company.html">会社概要</a></li>
-                        <li class="item"><a href="message.html">メッセージ</a></li>
-                        <li class="item"><a href="consulting.html">コンサルティングプロセス</a></li>
-                        <li class="item"><a href="#">お問い合わせ</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <header class="header">
+                <div class="header-inner">
+                    <div class="header-fixed">
+                    <h1 class="header-logo"><a href="index.html"><img src="img/logo.png" alt=""></a></h1>
+                    <button class="nav-btn" id="nav-btn" type="button" aria-label="メニュー"><span></span><span></span><span></span></button>
+                    </div>
+                    <div class="nav header-nav" id="nav">
+                        <nav class="nav-wrap">
+                            <ul class="nav-list">
+                                <li class="item"><a href="company.html">会社概要</a></li>
+                                <li class="item"><a href="message.html">メッセージ</a></li>
+                                <li class="item"><a href="consulting.html">コンサルティングプロセス</a></li>
+                                <li class="item"><a href="#">お問い合わせ</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
             <div class="company-image">
                 <div class="company-title">
                     会社概要
@@ -34,7 +41,7 @@
                 </tr>
                 <tr>
                     <td class="center">代表取締役</td>
-                    <td>三好 秀樹</td>
+                    <td>三好 秀樹<span class="profile"><a href="profile.html">(代表者プロフィール）</a></span></td>
                 </tr>
                 <tr>
                     <td class="center">設立</td>
@@ -53,6 +60,8 @@
 
             </table>
         </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="js/script.js"></script>
     </section>
 </body>
 </html>
